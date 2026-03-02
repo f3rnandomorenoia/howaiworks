@@ -1,25 +1,25 @@
-# Commercial Use & Partnerships
+# Uso comercial y colaboraciones
 
-This repository is designed for broad educational impact, while enabling sustainable long‑term commercialization.
+Este repositorio está diseñado para maximizar el impacto educativo, a la vez que permite una comercialización sostenible a largo plazo.
 
-## When you need a commercial license
+## Cuándo necesitas una licencia comercial
 
-If you want to use **the educational content** (text/narrative/explanations/demos as educational materials) for any commercial purpose, you need a separate written license from the author. Examples include (but are not limited to):
+Si quieres usar **el contenido educativo** (texto/narrativa/explicaciones/demos como materiales educativos) con cualquier fin comercial, necesitas una licencia escrita independiente del autor. Ejemplos (incluyendo, entre otros):
 
-- Hosted/SaaS deployments sold to customers
-- Paid courses, training, workshops, or certification content
-- Enterprise/institutional deployments bundled into a paid offering
-- Commercial consulting packages that redistribute the content
+- Despliegues alojados/SaaS vendidos a clientes
+- Cursos de pago, formación, talleres o contenido de certificación
+- Despliegues empresariales/institucionales incluidos en una oferta de pago
+- Paquetes de consultoría comercial que redistribuyen el contenido
 
-## Code vs content
+## Código vs contenido
 
-- **Code** is Apache‑2.0 (commercial-friendly).
-- **Content** is CC BY‑NC 4.0 by default (non‑commercial).
+- **Código**: Apache‑2.0 (compatible con uso comercial).
+- **Contenido**: CC BY‑NC 4.0 por defecto (solo no comercial).
 
-## Contact
+## Contacto
 
-For commercial licensing, enterprise deployments, custom demos, or partnerships, contact:
+Para licencias comerciales, despliegues empresariales, demos a medida o colaboraciones, contacta con:
 
 dongyushun887@gmail.com
 
-(Replace the placeholder with your real contact email.)
+(Si este email fuese un placeholder en tu copia, sustitúyelo por el email real de contacto.)
