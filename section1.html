@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Section I — The Dawn of Statistical Learning · How AI Works</title>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sección I — El amanecer del aprendizaje estadístico · How AI Works</title>
 <link rel="stylesheet" href="styles.css">
 </head><body>
 <div class="progress-bar" style="background:linear-gradient(90deg,var(--a1),var(--a2))"></div>
 <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <nav class="topnav"><a href="index.html" class="logo">How AI Works</a><div class="nav-links"><a href="section1.html" class="active">I</a><a href="section2.html">II</a><a href="section3.html">III</a><a href="section4.html">IV</a><a href="section5.html">V</a><a href="section6.html">VI</a><a href="section7.html">VII</a><a href="section8.html">VIII</a></div></nav>
-<div class="section-hero"><div class="era-label" style="color:var(--a1)">Section I · 1800s–1960s</div>
-<h1>The Dawn of Statistical Learning</h1><p>From Gauss's least squares to Rosenblatt's perceptron — mathematics lays the foundation for machine intelligence.</p>
-<div class="nav-arrows"><a href="index.html">&larr; Home</a><a href="section2.html">Section II &rarr;</a></div></div>
+<div class="section-hero"><div class="era-label" style="color:var(--a1)">Sección I · 1800s–1960s</div>
+<h1>El amanecer del aprendizaje estadístico</h1><p>De los mínimos cuadrados de Gauss al perceptrón de Rosenblatt — las matemáticas sientan las bases de la inteligencia de las máquinas.</p>
+<div class="nav-arrows"><a href="index.html">&larr; Inicio</a><a href="section2.html">Sección II &rarr;</a></div></div>
 <div class="models-container">
 
 <!-- ======= LINEAR REGRESSION ======= -->
 <div class="model-card" id="model-linreg"><div class="mc-head"><span class="mc-year" style="color:var(--a1)">1805</span><div class="mc-info">
-<h3>Linear Regression <a href="https://en.wikipedia.org/wiki/Least_squares" target="_blank" class="paper-link">Paper</a></h3>
-<p>Legendre & Gauss's method of least squares — fit a straight line to scattered data by minimizing the sum of squared errors.</p>
-<div class="model-lineage">The mathematical foundation for all optimization-based learning; directly leads to <a href="section1.html#model-adaline">Adaline</a> and modern <a href="section3.html#model-backprop">Backpropagation</a>.</div>
+<h3>Regresión lineal <a href="https://en.wikipedia.org/wiki/Least_squares" target="_blank" class="paper-link">Paper</a></h3>
+<p>El método de mínimos cuadrados de Legendre y Gauss — ajusta una recta a datos dispersos minimizando la suma de los errores al cuadrado.</p>
+<div class="model-lineage">La base matemática de todo aprendizaje basado en optimización; conduce directamente a <a href="section1.html#model-adaline">Adaline</a> y a la <a href="section3.html#model-backprop">retropropagación</a> moderna.</div>
 </div></div>
-<div class="mc-formula" style="color:var(--a1)">y = wx + b &nbsp; minimize Σ(yᵢ - (wxᵢ + b))²</div>
+<div class="mc-formula" style="color:var(--a1)">y = wx + b &nbsp; minimizar Σ(yᵢ - (wxᵢ + b))²</div>
 <div class="mc-demo" id="demo-lr"></div></div>
 
 <!-- ======= BAYES' THEOREM ======= -->
 <div class="model-card" id="model-bayes"><div class="mc-head"><span class="mc-year" style="color:var(--a1)">1812</span><div class="mc-info">
-<h3>Bayes' Theorem <a href="https://en.wikipedia.org/wiki/Bayes%27_theorem" target="_blank" class="paper-link">Paper</a></h3>
-<p>Update your belief based on new evidence. Prior × likelihood → posterior. The core framework of probabilistic inference.</p>
-<div class="model-lineage">The foundation of probabilistic reasoning; directly enables <a href="section2.html#model-naivebayes">Naive Bayes</a> classifiers and <a href="section4.html#model-gmm">GMM+EM</a> clustering.</div>
+<h3>Teorema de Bayes <a href="https://en.wikipedia.org/wiki/Bayes%27_theorem" target="_blank" class="paper-link">Paper</a></h3>
+<p>Actualiza tu creencia a partir de nueva evidencia. Prior × verosimilitud → posterior. El marco central de la inferencia probabilística.</p>
+<div class="model-lineage">La base del razonamiento probabilístico; permite directamente los clasificadores <a href="section2.html#model-naivebayes">Naive Bayes</a> y el *clustering* con <a href="section4.html#model-gmm">GMM+EM</a>.</div>
 </div></div>
-<div class="mc-formula" style="color:var(--a1)">P(A|B) = P(B|A)·P(A) / P(B) &nbsp; posterior = likelihood × prior / evidence</div>
+<div class="mc-formula" style="color:var(--a1)">P(A|B) = P(B|A)·P(A) / P(B) &nbsp; posterior = verosimilitud × previa / evidencia</div>
 <div class="mc-demo" id="demo-bayes"></div></div>
 
 <!-- ======= MARKOV CHAIN ======= -->
 <div class="model-card" id="model-markov"><div class="mc-head"><span class="mc-year" style="color:var(--a1)">1906</span><div class="mc-info">
-<h3>Markov Chain <a href="https://en.wikipedia.org/wiki/Markov_chain" target="_blank" class="paper-link">Paper</a></h3>
-<p>Memoryless state transitions — the next state depends only on the current state. Cornerstone of HMM, MCMC, and PageRank.</p>
-<div class="model-lineage">Inspires sequential modeling; its memoryless limitation motivates <a href="section3.html#model-rnn">RNN</a> (which adds memory) and <a href="section3.html#model-boltzmann">Boltzmann Machine</a> sampling.</div>
+<h3>Cadena de Markov <a href="https://en.wikipedia.org/wiki/Markov_chain" target="_blank" class="paper-link">Paper</a></h3>
+<p>Transiciones de estado sin memoria — el siguiente estado depende solo del estado actual. Piedra angular de HMM, MCMC y PageRank.</p>
+<div class="model-lineage">Inspira el modelado secuencial; su limitación “sin memoria” motiva las <a href="section3.html#model-rnn">RNN</a> (que añaden memoria) y el muestreo con la <a href="section3.html#model-boltzmann">máquina de Boltzmann</a>.</div>
 </div></div>
-<div class="mc-formula" style="color:var(--a1)">P(Xₙ₊₁|Xₙ,Xₙ₋₁,...) = P(Xₙ₊₁|Xₙ) &nbsp; memoryless property</div>
+<div class="mc-formula" style="color:var(--a1)">P(Xₙ₊₁|Xₙ,Xₙ₋₁,...) = P(Xₙ₊₁|Xₙ) &nbsp; propiedad sin memoria</div>
 <div class="mc-demo" id="demo-markov"></div></div>
 
 <!-- ======= PERCEPTRON ======= -->
 <div class="model-card" id="model-perceptron"><div class="mc-head"><span class="mc-year" style="color:var(--a1)">1958</span><div class="mc-info">
-<h3>Perceptron <a href="https://doi.org/10.1037/h0042519" target="_blank" class="paper-link">Paper</a></h3>
-<p>Rosenblatt's first artificial neuron that could learn from data. Computes weighted sum of inputs; output 1 if above threshold, 0 otherwise.</p>
-<div class="model-lineage">Builds on <a href="section1.html#model-linreg">Linear Regression</a> with a step activation; its linear-only limitation is fixed by <a href="section1.html#model-adaline">Adaline</a> and later <a href="section3.html#model-backprop">Backpropagation</a>.</div>
+<h3>Perceptrón <a href="https://doi.org/10.1037/h0042519" target="_blank" class="paper-link">Paper</a></h3>
+<p>La primera neurona artificial de Rosenblatt capaz de aprender a partir de datos. Calcula una suma ponderada de entradas; salida 1 si supera un umbral, 0 en caso contrario.</p>
+<div class="model-lineage">Se basa en la <a href="section1.html#model-linreg">regresión lineal</a> con una activación escalón; su limitación lineal se corrige con <a href="section1.html#model-adaline">Adaline</a> y más adelante con la <a href="section3.html#model-backprop">retropropagación</a>.</div>
 </div></div>
 <div class="mc-formula" style="color:var(--a1)">y = step(w·x + b) &nbsp; update: w += η(target - y)·x</div>
 <div class="mc-demo" id="demo-perceptron"></div></div>
@@ -50,14 +50,14 @@
 <!-- ======= ADALINE ======= -->
 <div class="model-card" id="model-adaline"><div class="mc-head"><span class="mc-year" style="color:var(--a1)">1960</span><div class="mc-info">
 <h3>Adaline <a href="https://en.wikipedia.org/wiki/ADALINE" target="_blank" class="paper-link">Paper</a></h3>
-<p>Widrow & Hoff's adaptive linear neuron — unlike the Perceptron, Adaline computes error <strong>before</strong> the activation function, enabling true gradient descent (LMS rule). The decision boundary glides smoothly into place!</p>
-<div class="model-lineage">Improves on <a href="section1.html#model-perceptron">Perceptron</a> by using continuous gradient descent instead of discrete updates; the LMS rule directly inspires <a href="section3.html#model-backprop">Backpropagation</a>.</div>
+<p>La neurona lineal adaptativa de Widrow y Hoff — a diferencia del perceptrón, Adaline calcula el error <strong>antes</strong> de la función de activación, lo que habilita un descenso por gradiente real (regla LMS). ¡La frontera de decisión se desliza suavemente hasta su sitio!</p>
+<div class="model-lineage">Mejora el <a href="section1.html#model-perceptron">perceptrón</a> usando descenso por gradiente continuo en lugar de actualizaciones discretas; la regla LMS inspira directamente la <a href="section3.html#model-backprop">retropropagación</a>.</div>
 </div></div>
-<div class="mc-formula" style="color:var(--a1)">z = w·x + b &nbsp; Δw = η(target − z)·x &nbsp; error on raw output, not after step()</div>
+<div class="mc-formula" style="color:var(--a1)">z = w·x + b &nbsp; Δw = η(target − z)·x &nbsp; error en la salida lineal (z), no tras step()</div>
 <div class="mc-demo" id="demo-adaline"></div></div>
 
 </div>
-<footer><a href="index.html">&larr; Home</a> &middot; <a href="section2.html">Section II: Early Exploration &rarr;</a></footer>
+<footer><a href="index.html">&larr; Inicio</a> &middot; <a href="section2.html">Sección II: Exploración temprana &rarr;</a></footer>
 <script src="shared.js"></script>
 
 <script>
@@ -118,7 +118,7 @@
 <script>
 // ===== LINEAR REGRESSION =====
 (function(){const el=$('demo-lr'),[c,ctx]=createCanvas(el,750,300);
-addHint(el,'Click to add points, right-click to remove nearest. Best-fit line updates in real-time.');
+addHint(el,'Haz clic para añadir puntos; clic derecho para eliminar el más cercano. La recta de mejor ajuste se actualiza en tiempo real.');
 let pts=[{x:100,y:230},{x:180,y:195},{x:260,y:175},{x:350,y:140},{x:430,y:110},{x:550,y:80},{x:620,y:60}];
 function fit(){if(pts.length<2)return{w:0,b:150};let sx=0,sy=0,sxy=0,sxx=0,n=pts.length;
 pts.forEach(p=>{sx+=p.x;sy+=p.y;sxy+=p.x*p.y;sxx+=p.x*p.x});let w=(n*sxy-sx*sy)/(n*sxx-sx*sx||1);return{w,b:(sy-w*sx)/n}}
@@ -145,13 +145,13 @@ c.onclick=e=>{let r=c.getBoundingClientRect();pts.push({x:(e.clientX-r.left)*750
 c.oncontextmenu=e=>{e.preventDefault();let r=c.getBoundingClientRect(),mx=(e.clientX-r.left)*750/r.width,my=(e.clientY-r.top)*300/r.height;
 pts=pts.filter(p=>dist(p.x,p.y,mx,my)>15);draw()};
 const ctrl=addControls(el);
-const rb=document.createElement('button');rb.className='btn';rb.textContent='🎲 Random';rb.onclick=()=>{pts=[];for(let i=0;i<10;i++)pts.push({x:rand(40,700),y:rand(20,280)});draw()};
-const clr=document.createElement('button');clr.className='btn';clr.textContent='↻ Reset';clr.onclick=()=>{pts=[{x:100,y:230},{x:180,y:195},{x:260,y:175},{x:350,y:140},{x:430,y:110},{x:550,y:80},{x:620,y:60}];draw()};
+const rb=document.createElement('button');rb.className='btn';rb.textContent='🎲 Aleatorio';rb.onclick=()=>{pts=[];for(let i=0;i<10;i++)pts.push({x:rand(40,700),y:rand(20,280)});draw()};
+const clr=document.createElement('button');clr.className='btn';clr.textContent='↻ Reiniciar';clr.onclick=()=>{pts=[{x:100,y:230},{x:180,y:195},{x:260,y:175},{x:350,y:140},{x:430,y:110},{x:550,y:80},{x:620,y:60}];draw()};
 ctrl.appendChild(rb);ctrl.appendChild(clr);draw()})();
 
 // ===== BAYES' THEOREM — Medical Diagnosis =====
 (function(){const el=$('demo-bayes'),[c,ctx]=createCanvas(el,750,400);
-addHint(el,'Drag sliders to change disease prevalence and test accuracy. Watch the funnel: most positive tests are false alarms!');
+addHint(el,'Mueve los deslizadores para cambiar la prevalencia de la enfermedad y la precisión del test. Observa el embudo: ¡muchos positivos son falsas alarmas!');
 let prev=3,sens=92,fpr=7;
 function draw(){ctx.clearRect(0,0,750,400);
 let pop=1000,sick=Math.round(pop*prev/100),healthy=pop-sick;
@@ -159,7 +159,7 @@ let tp=Math.round(sick*sens/100),fn=sick-tp,fp=Math.round(healthy*fpr/100),tn=he
 let totalPos=tp+fp,post=totalPos>0?tp/totalPos*100:0;
 // ===== LEFT: Population Funnel =====
 ctx.fillStyle='rgba(6,6,12,.9)';ctx.beginPath();ctx.roundRect(10,8,355,240,10);ctx.fill();
-ctx.fillStyle='#ffd166';ctx.font='700 12px Fira Code';ctx.fillText('Population: '+pop+' people',22,28);
+ctx.fillStyle='#ffd166';ctx.font='700 12px Fira Code';ctx.fillText('Población: '+pop+' personas',22,28);
 // Top bar: sick vs healthy
 let bx=22,by=42,bw=330,bh=28;
 let sickW=bw*(sick/pop),healthW=bw-sickW;
@@ -203,8 +203,8 @@ if(fpBar>40)ctx.fillText(fp+' false',32+tpBar+fpBar/2,ry+25);
 ctx.textAlign='left';
 // ===== RIGHT: Big Result =====
 ctx.fillStyle='rgba(6,6,12,.92)';ctx.beginPath();ctx.roundRect(380,8,360,240,12);ctx.fill();
-ctx.fillStyle='#ffd166';ctx.font='700 14px Fira Code';ctx.fillText('⊕ You tested POSITIVE',395,34);
-ctx.fillStyle='#7d7a8c';ctx.font='400 10px Fira Code';ctx.fillText('What is the probability you are actually sick?',395,54);
+ctx.fillStyle='#ffd166';ctx.font='700 14px Fira Code';ctx.fillText('⊕ Has dado POSITIVO',395,34);
+ctx.fillStyle='#7d7a8c';ctx.font='400 10px Fira Code';ctx.fillText('¿Cuál es la probabilidad de que estés realmente enfermo?',395,54);
 // Big percentage
 let pctColor=post>50?'#ff6b6b':post>20?'#ffd166':'#34d399';
 ctx.fillStyle=pctColor;ctx.font='900 64px Fraunces';ctx.fillText(post.toFixed(1)+'%',400,130);
@@ -213,33 +213,33 @@ ctx.fillStyle='#111120';ctx.beginPath();ctx.roundRect(400,148,320,20,5);ctx.fill
 ctx.fillStyle=pctColor;ctx.beginPath();ctx.roundRect(400,148,Math.max(320*post/100,4),20,5);ctx.fill();
 // Verdict
 ctx.fillStyle='#e4e2df';ctx.font='500 11px Fira Code';
-ctx.fillText(post<15?'😌 Relax! You\'re almost certainly fine.':
-post<35?'🤔 Unlikely sick, but maybe retest.':
-post<65?'⚠️ Coin-flip. Further testing needed.':
-post<85?'😟 Likely sick. See a doctor.':
-'🚨 Very likely sick. Seek treatment.',400,188);
+ctx.fillText(post<15?'😌 Tranquilo: casi seguro que estás bien.':
+post<35?'🤔 Es poco probable, pero quizá conviene repetir el test.':
+post<65?'⚠️ Casi 50/50. Hace falta más confirmación.':
+post<85?'😟 Es probable. Consulta a un médico.':
+'🚨 Muy probable. Busca tratamiento.',400,188);
 // Formula
 ctx.fillStyle='#a78bfa';ctx.font='500 10px Fira Code';ctx.fillText('P(sick|+) = P(+|sick)·P(sick) / P(+)',400,215);
 ctx.fillStyle='#7d7a8c';ctx.font='400 9px Fira Code';
 ctx.fillText('= '+sens+'%×'+prev+'% / '+((tp+fp)/pop*100).toFixed(1)+'% = '+post.toFixed(1)+'%',400,235);
 // ===== BOTTOM: Insight =====
 ctx.fillStyle='rgba(6,6,12,.88)';ctx.beginPath();ctx.roundRect(10,258,730,65,10);ctx.fill();
-ctx.fillStyle='#ff6b6b';ctx.font='700 11px Fira Code';ctx.fillText('🔑 The Base Rate Fallacy',22,278);
+ctx.fillStyle='#ff6b6b';ctx.font='700 11px Fira Code';ctx.fillText('🔑 La falacia de la tasa base',22,278);
 ctx.fillStyle='#e4e2df';ctx.font='400 10px Fira Code';
 ctx.fillText('With '+prev+'% prevalence: '+healthy+' healthy people produce '+fp+' false alarms, while only '+sick+' sick produce '+tp+' true positives.',22,298);
 ctx.fillStyle='#ffd166';ctx.font='500 10px Fira Code';
-ctx.fillText('Bayes\' insight: the prior probability (base rate) matters enormously — a rare disease means most positives are wrong!',22,316);
+ctx.fillText('La idea clave de Bayes: la probabilidad previa (tasa base) importa muchísimo — si la enfermedad es rara, ¡la mayoría de positivos serán erróneos!',22,316);
 // ===== BOTTOM: Icon dots =====
 let dx=12,dy=332,ds=4.5,dcols=100;
 for(let i=0;i<pop;i++){let x=dx+(i%dcols)*ds*1.55,y=dy+Math.floor(i/dcols)*ds*1.55;
 let isSick=i<sick,testPos=isSick?i<tp:i>=sick&&i<sick+fp;
 ctx.fillStyle=isSick&&testPos?'#ff6b6b':isSick?'#a78bfa':testPos?'#fb923c':'#181828';
 ctx.beginPath();ctx.arc(x+ds/2,y+ds/2,ds/2,0,TAU);ctx.fill()}
-ctx.fillStyle='#4a475a';ctx.font='400 8px Fira Code';ctx.fillText('Each dot = 1 of '+pop+' people   🔴 true+  🟠 false+  🟣 missed  ⚫ true−',12,396)}
+ctx.fillStyle='#4a475a';ctx.font='400 8px Fira Code';ctx.fillText('Cada punto = 1 de '+pop+' personas   🔴 verdadero +  🟠 falso +  🟣 perdido  ⚫ verdadero −',12,396)}
 const ctrl=addControls(el);
-ctrl.innerHTML='<label>Prevalence</label><input type="range" min="1" max="50" value="3" id="bp"><span id="bpv" class="btn" style="min-width:36px;text-align:center">3%</span>'+
-'<label>Sensitivity</label><input type="range" min="50" max="99" value="92" id="bs"><span id="bsv" class="btn" style="min-width:36px;text-align:center">92%</span>'+
-'<label>False +</label><input type="range" min="1" max="30" value="7" id="bf"><span id="bfv" class="btn" style="min-width:36px;text-align:center">7%</span>';
+ctrl.innerHTML='<label>Prevalencia</label><input type="range" min="1" max="50" value="3" id="bp"><span id="bpv" class="btn" style="min-width:36px;text-align:center">3%</span>'+
+'<label>Sensibilidad</label><input type="range" min="50" max="99" value="92" id="bs"><span id="bsv" class="btn" style="min-width:36px;text-align:center">92%</span>'+
+'<label>Falsos +</label><input type="range" min="1" max="30" value="7" id="bf"><span id="bfv" class="btn" style="min-width:36px;text-align:center">7%</span>';
 $('bp').oninput=e=>{prev=+e.target.value;$('bpv').textContent=prev+'%';draw()};
 $('bs').oninput=e=>{sens=+e.target.value;$('bsv').textContent=sens+'%';draw()};
 $('bf').oninput=e=>{fpr=+e.target.value;$('bfv').textContent=fpr+'%';draw()};
@@ -247,8 +247,8 @@ draw()})();
 
 // ===== MARKOV CHAIN =====
 (function(){const el=$('demo-markov'),[c,ctx]=createCanvas(el,750,340);
-addHint(el,'Click states to start. Watch the particle bounce between states — frequency bars converge to the steady-state distribution!');
-const states=[{name:'Sunny',emoji:'☀️',x:160,y:90,c:'#ffd166'},{name:'Cloudy',emoji:'☁️',x:590,y:90,c:'#94a3b8'},{name:'Rainy',emoji:'🌧️',x:375,y:250,c:'#38bdf8'}];
+addHint(el,'Haz clic en un estado para empezar. Observa cómo la partícula rebota entre estados: las barras de frecuencia convergen a la distribución estacionaria.');
+const states=[{name:'Soleado',emoji:'☀️',x:160,y:90,c:'#ffd166'},{name:'Nublado',emoji:'☁️',x:590,y:90,c:'#94a3b8'},{name:'Lluvioso',emoji:'🌧️',x:375,y:250,c:'#38bdf8'}];
 const trans=[[.6,.3,.1],[.2,.4,.4],[.3,.3,.4]];
 let cur=0,history=[0],visits=[1,0,0],animT=0,animFrom=-1,animTo=-1,animating=false;
 function draw(){ctx.clearRect(0,0,750,340);
@@ -286,14 +286,14 @@ ctx.fillText(s.name,s.x,s.y+22);ctx.textAlign='left'});
 // Visit frequency panel
 let fx=15,fy=295;ctx.fillStyle='rgba(6,6,12,.88)';ctx.beginPath();ctx.roundRect(fx,fy-8,470,48,8);ctx.fill();
 let totalV=visits.reduce((a,b)=>a+b,0)||1;
-ctx.fillStyle='#7d7a8c';ctx.font='500 9px Fira Code';ctx.fillText('Visit frequency ('+totalV+' steps):',fx+8,fy+6);
+ctx.fillStyle='#7d7a8c';ctx.font='500 9px Fira Code';ctx.fillText('Frecuencia de visita ('+totalV+' pasos):',fx+8,fy+6);
 states.forEach((s,i)=>{let x=fx+8+i*155,y=fy+14,pct=visits[i]/totalV;
 ctx.fillStyle='#111120';ctx.beginPath();ctx.roundRect(x,y,120,16,3);ctx.fill();
 ctx.fillStyle=s.c;ctx.beginPath();ctx.roundRect(x,y,120*pct,16,3);ctx.fill();
 ctx.fillStyle='#e4e2df';ctx.font='600 8px Fira Code';ctx.fillText(s.name+' '+(pct*100).toFixed(1)+'%',x+4,y+12)});
 // History trail
 let hx=500,hy=fy-8;ctx.fillStyle='rgba(6,6,12,.88)';ctx.beginPath();ctx.roundRect(hx,hy,240,48,8);ctx.fill();
-ctx.fillStyle='#4a475a';ctx.font='400 8px Fira Code';ctx.fillText('Recent path:',hx+8,hy+12);
+ctx.fillStyle='#4a475a';ctx.font='400 8px Fira Code';ctx.fillText('Recorrido reciente:',hx+8,hy+12);
 let visH=history.slice(-12);
 visH.forEach((h,i)=>{let x=hx+8+i*19,y=hy+20;
 ctx.fillStyle=states[h].c;ctx.font='12px sans-serif';ctx.fillText(states[h].emoji,x,y+10)})}
@@ -306,17 +306,17 @@ let anim=()=>{animT+=.08;if(animT>=1){animating=false;animFrom=-1;animTo=-1;draw
 c.onclick=e=>{let r=c.getBoundingClientRect(),mx=(e.clientX-r.left)*750/r.width,my=(e.clientY-r.top)*340/r.height;
 states.forEach((s,i)=>{if(dist(mx,my,s.x,s.y)<44){cur=i;history=[i];visits=[0,0,0];visits[i]=1;draw()}})};
 const ctrl=addControls(el);
-const sb=document.createElement('button');sb.className='btn';sb.textContent='▶ Step';sb.onclick=step;
+const sb=document.createElement('button');sb.className='btn';sb.textContent='▶ Paso';sb.onclick=step;
 let tmr=null;const ab=document.createElement('button');ab.className='btn';ab.textContent='⏩ Auto';
 ab.onclick=()=>{if(tmr){clearInterval(tmr);tmr=null;ab.classList.remove('active')}else{tmr=setInterval(step,500);ab.classList.add('active')}};
 const fb=document.createElement('button');fb.className='btn';fb.textContent='⏩ ×100';fb.onclick=()=>{for(let i=0;i<100;i++){let probs=trans[cur],r=Math.random(),cum=0;for(let j=0;j<probs.length;j++){cum+=probs[j];if(r<=cum){cur=j;break}}history.push(cur);visits[cur]++}draw()};
-const rst=document.createElement('button');rst.className='btn';rst.textContent='↻ Reset';
+const rst=document.createElement('button');rst.className='btn';rst.textContent='↻ Reiniciar';
 rst.onclick=()=>{cur=0;history=[0];visits=[1,0,0];if(tmr){clearInterval(tmr);tmr=null;ab.classList.remove('active')}draw()};
 ctrl.appendChild(sb);ctrl.appendChild(ab);ctrl.appendChild(fb);ctrl.appendChild(rst);draw()})();
 
 // ===== PERCEPTRON =====
 (function(){const el=$('demo-perceptron'),[c,ctx]=createCanvas(el,750,340);
-addHint(el,'Left-click = Red (class 0), Right-click = Blue (class 1). Train to learn the boundary. Yellow ring = misclassified.');
+addHint(el,'Clic izquierdo = rojo (clase 0), clic derecho = azul (clase 1). Entrena para aprender la frontera. Aro amarillo = mal clasificado.');
 let pts=[],w1=0,w2=0,b=0,lr=0.2,epoch=0,errs=0,errHist=[];
 // Normalize pixel coords to [0,1] for stable training
 function nx(px){return px/750} function ny(py){return py/340}
@@ -351,37 +351,37 @@ if(wrong){ctx.strokeStyle='#ffd166';ctx.lineWidth=3;ctx.stroke()}
 ctx.restore()});
 // Info panel
 ctx.fillStyle='rgba(6,6,12,.9)';ctx.beginPath();ctx.roundRect(8,8,240,60,8);ctx.fill();
-ctx.fillStyle='#ffd166';ctx.font='700 12px Fira Code';ctx.fillText('Epoch '+epoch,18,28);
+ctx.fillStyle='#ffd166';ctx.font='700 12px Fira Code';ctx.fillText('Época '+epoch,18,28);
 ctx.fillStyle=errs>0?'#ff6b6b':'#34d399';ctx.font='600 12px Fira Code';
-ctx.fillText(errs>0?'Errors: '+errs+'/'+pts.length:'✅ Converged!',100,28);
+ctx.fillText(errs>0?'Errores: '+errs+'/'+pts.length:'✅ ¡Convergió!',100,28);
 ctx.fillStyle='#7d7a8c';ctx.font='400 9px Fira Code';
 ctx.fillText('w₁='+w1.toFixed(3)+' w₂='+w2.toFixed(3)+' b='+b.toFixed(3),18,48);
 ctx.fillText('lr='+lr,18,62);
 // Error history mini-chart
 if(errHist.length>1){let cx2=560,cy2=8;
 ctx.fillStyle='rgba(6,6,12,.9)';ctx.beginPath();ctx.roundRect(cx2,cy2,182,65,8);ctx.fill();
-ctx.fillStyle='#ff6b6b';ctx.font='500 9px Fira Code';ctx.fillText('Errors over epochs:',cx2+8,cy2+16);
+ctx.fillStyle='#ff6b6b';ctx.font='500 9px Fira Code';ctx.fillText('Errores por época:',cx2+8,cy2+16);
 let mx=Math.max(...errHist,1);ctx.strokeStyle='#ff6b6b';ctx.lineWidth=1.5;ctx.beginPath();
 errHist.forEach((e,i)=>{let x=cx2+8+i*(164/100),y=cy2+60-(e/mx)*38;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.stroke();
 if(errs===0){ctx.fillStyle='#34d399';ctx.font='700 9px Fira Code';ctx.fillText('→ 0',cx2+155,cy2+58)}}
 // Algorithm rule
 ctx.fillStyle='rgba(6,6,12,.85)';ctx.beginPath();ctx.roundRect(8,300,500,34,6);ctx.fill();
 ctx.fillStyle='#ffd166';ctx.font='500 9px Fira Code';
-ctx.fillText('Perceptron Rule: if ŷ ≠ y → w += lr·(y−ŷ)·x, b += lr·(y−ŷ)',18,321);
-ctx.fillStyle='#7d7a8c';ctx.fillText('Guaranteed to converge for linearly separable data!',18,335)}
+ctx.fillText('Regla del perceptrón: si ŷ ≠ y → w += lr·(y−ŷ)·x, b += lr·(y−ŷ)',18,321);
+ctx.fillStyle='#7d7a8c';ctx.fillText('¡Garantiza converger si los datos son linealmente separables!',18,335)}
 c.onclick=e=>{let r=c.getBoundingClientRect();pts.push({x:(e.clientX-r.left)*750/r.width,y:(e.clientY-r.top)*340/r.height,c:0});draw()};
 c.oncontextmenu=e=>{e.preventDefault();let r=c.getBoundingClientRect();pts.push({x:(e.clientX-r.left)*750/r.width,y:(e.clientY-r.top)*340/r.height,c:1});draw()};
 const ctrl=addControls(el);
-const tb=document.createElement('button');tb.className='btn';tb.textContent='▶ Train ×10';tb.onclick=()=>{for(let i=0;i<10;i++)trainEpoch();draw()};
-let tmr=null;const ab=document.createElement('button');ab.className='btn';ab.textContent='⏩ Auto Train';
+const tb=document.createElement('button');tb.className='btn';tb.textContent='▶ Entrenar ×10';tb.onclick=()=>{for(let i=0;i<10;i++)trainEpoch();draw()};
+let tmr=null;const ab=document.createElement('button');ab.className='btn';ab.textContent='⏩ Autoentrenar';
 ab.onclick=()=>{if(tmr){clearInterval(tmr);tmr=null;ab.classList.remove('active')}else{tmr=setInterval(()=>{trainEpoch();draw();if(errs===0){clearInterval(tmr);tmr=null;ab.classList.remove('active')}},60);ab.classList.add('active')}};
-const rst=document.createElement('button');rst.className='btn';rst.textContent='↻ Reset';
+const rst=document.createElement('button');rst.className='btn';rst.textContent='↻ Reiniciar';
 rst.onclick=()=>{seed();if(tmr){clearInterval(tmr);tmr=null;ab.classList.remove('active')}draw()};
 ctrl.appendChild(tb);ctrl.appendChild(ab);ctrl.appendChild(rst);draw()})();
 
 // ===== ADALINE — Classification with Smooth Gradient Descent =====
 (function(){const el=$('demo-adaline'),[c,ctx]=createCanvas(el,750,520);
-addHint(el,'Left-click = Red (class −1), Right-click = Blue (class +1). Watch the smooth gradient descent — compare with Perceptron\'s discrete jumps above!');
+addHint(el,'Clic izquierdo = rojo (clase −1), clic derecho = azul (clase +1). Observa el descenso por gradiente suave — compáralo con los saltos discretos del perceptrón de arriba.');
 let pts=[],w1=0,w2=0,b=0,lr=0.15,ep=0,losses=[],wHist=[];
 // Normalize coordinates for stable training
 function nx(px){return px/750}
@@ -482,10 +482,10 @@ ctx.strokeStyle='rgba(255,209,102,0.3)';ctx.lineWidth=1;ctx.stroke()}
 ctx.restore()});
 // === INFO PANEL (top-left) ===
 ctx.fillStyle='rgba(6,6,12,.92)';ctx.beginPath();ctx.roundRect(8,8,260,75,10);ctx.fill();
-ctx.fillStyle='#ffd166';ctx.font='700 13px Fira Code';ctx.fillText('Adaline — Epoch '+ep,18,28);
+ctx.fillStyle='#ffd166';ctx.font='700 13px Fira Code';ctx.fillText('Adaline — Época '+ep,18,28);
 let errs=pts.filter(p=>predict(p.x,p.y)!==(p.c>=0?1:-1)).length;
 ctx.fillStyle=errs>0?'#ff6b6b':'#34d399';ctx.font='600 11px Fira Code';
-ctx.fillText(errs>0?'Errors: '+errs+'/'+pts.length:'✅ All correct!',18,48);
+ctx.fillText(errs>0?'Errores: '+errs+'/'+pts.length:'✅ ¡Todo correcto!',18,48);
 ctx.fillStyle='#7d7a8c';ctx.font='400 9px Fira Code';
 ctx.fillText('w₁='+w1.toFixed(3)+' w₂='+w2.toFixed(3)+' b='+b.toFixed(3),18,64);
 ctx.fillText('lr='+lr.toFixed(2)+'  |  '+pts.length+' points',18,78);
@@ -493,7 +493,7 @@ ctx.fillText('lr='+lr.toFixed(2)+'  |  '+pts.length+' points',18,78);
 let panelY=388;
 // --- Loss Curve Panel (left) ---
 ctx.fillStyle='rgba(6,6,12,.92)';ctx.beginPath();ctx.roundRect(8,panelY,240,125,10);ctx.fill();
-ctx.fillStyle='#ff6b6b';ctx.font='700 11px Fira Code';ctx.fillText('Loss (MSE) — Smooth Descent',18,panelY+18);
+ctx.fillStyle='#ff6b6b';ctx.font='700 11px Fira Code';ctx.fillText('Pérdida (MSE) — descenso suave',18,panelY+18);
 if(losses.length>1){let mx=Math.max(...losses),mn=Math.min(...losses);if(mx===mn)mx=mn+1;
 let gx=18,gy=panelY+28,gw=220,gh=60;
 // Gradient fill under curve
@@ -508,13 +508,13 @@ let lastY=gy+(1-(losses[losses.length-1]-mn)/(mx-mn))*gh;
 ctx.save();ctx.shadowColor='#ff6b6b';ctx.shadowBlur=10;
 ctx.beginPath();ctx.arc(lastX,lastY,4,0,TAU);ctx.fillStyle='#ff6b6b';ctx.fill();ctx.restore()}
 ctx.fillStyle='#7d7a8c';ctx.font='400 9px Fira Code';
-if(losses.length)ctx.fillText('Current MSE: '+losses[losses.length-1].toFixed(4),18,panelY+105);
+if(losses.length)ctx.fillText('MSE actual: '+losses[losses.length-1].toFixed(4),18,panelY+105);
 ctx.fillStyle='#34d399';ctx.font='400 8px Fira Code';
-ctx.fillText('↑ Smooth curve = continuous gradient!',18,panelY+118);
+ctx.fillText('↑ Curva suave = gradiente continuo',18,panelY+118);
 // --- Weight Trajectory Panel (center) ---
 let wx=258,ww=160;
 ctx.fillStyle='rgba(6,6,12,.92)';ctx.beginPath();ctx.roundRect(wx,panelY,ww,125,10);ctx.fill();
-ctx.fillStyle='#a78bfa';ctx.font='700 10px Fira Code';ctx.fillText('Weight Space',wx+10,panelY+16);
+ctx.fillStyle='#a78bfa';ctx.font='700 10px Fira Code';ctx.fillText('Espacio de pesos',wx+10,panelY+16);
 if(wHist.length>1){
 let allW1=wHist.map(h=>h.w1),allW2=wHist.map(h=>h.w2);
 let minW1=Math.min(...allW1)-.5,maxW1=Math.max(...allW1)+.5;
@@ -538,12 +538,12 @@ ctx.save();ctx.shadowColor='#ffd166';ctx.shadowBlur=12;ctx.beginPath();
 ctx.arc(mapX(last.w1),mapY(last.w2),5,0,TAU);ctx.fillStyle='#ffd166';ctx.fill();ctx.restore()}
 ctx.fillStyle='#7d7a8c';ctx.font='400 8px Fira Code';
 ctx.fillText('w₁ →',wx+10,panelY+118);ctx.fillText('w₂ ↓',wx+ww-30,panelY+118);
-ctx.fillStyle='#a78bfa66';ctx.fillText('Trajectory = gradient path',wx+50,panelY+118);
+ctx.fillStyle='#a78bfa66';ctx.fillText('Trayectoria = camino del gradiente',wx+50,panelY+118);
 // --- Architecture + Key Difference Panel (right) ---
 let rx=428,rw=314;
 ctx.fillStyle='rgba(6,6,12,.92)';ctx.beginPath();ctx.roundRect(rx,panelY,rw,125,10);ctx.fill();
 // Adaline neuron diagram (compact)
-ctx.fillStyle='#a78bfa';ctx.font='700 10px Fira Code';ctx.fillText('Adaline Architecture',rx+10,panelY+16);
+ctx.fillStyle='#a78bfa';ctx.font='700 10px Fira Code';ctx.fillText('Arquitectura de Adaline',rx+10,panelY+16);
 // Inputs
 [{l:'x₁',y:panelY+38},{l:'x₂',y:panelY+62},{l:'1',y:panelY+86}].forEach(n=>{
 ctx.beginPath();ctx.arc(rx+28,n.y,10,0,TAU);ctx.fillStyle='#38bdf822';ctx.fill();
@@ -564,7 +564,7 @@ ctx.fillStyle='#34d399';ctx.font='700 9px Fira Code';ctx.fillText('z',rx+138,pan
 ctx.save();ctx.strokeStyle='#ff6b6b';ctx.lineWidth=1.5;ctx.setLineDash([3,3]);
 ctx.beginPath();ctx.moveTo(rx+145,panelY+58);ctx.lineTo(rx+145,panelY+36);ctx.lineTo(rx+190,panelY+36);ctx.stroke();ctx.setLineDash([]);ctx.restore();
 ctx.fillStyle='#ff6b6b';ctx.font='700 8px Fira Code';ctx.fillText('error = t − z',rx+150,panelY+30);
-ctx.fillStyle='#ff6b6b';ctx.font='400 7px Fira Code';ctx.fillText('← computed HERE!',rx+150,panelY+42);
+ctx.fillStyle='#ff6b6b';ctx.font='400 7px Fira Code';ctx.fillText('← se calcula AQUÍ',rx+150,panelY+42);
 // Activation → output
 ctx.strokeStyle='#4a475a';ctx.beginPath();ctx.moveTo(rx+150,panelY+58);ctx.lineTo(rx+190,panelY+58);ctx.stroke();
 // Step function box
@@ -581,9 +581,9 @@ ctx.fillStyle='#ff6b6b88';ctx.font='400 7px Fira Code';ctx.fillText('Δw = η·e
 // Key difference box
 ctx.fillStyle='rgba(255,209,102,.06)';ctx.beginPath();ctx.roundRect(rx+8,panelY+90,rw-16,28,6);ctx.fill();
 ctx.strokeStyle='#ffd16633';ctx.beginPath();ctx.roundRect(rx+8,panelY+90,rw-16,28,6);ctx.stroke();
-ctx.fillStyle='#ffd166';ctx.font='700 8px Fira Code';ctx.fillText('KEY:',rx+14,panelY+104);
-ctx.fillStyle='#e4e2df';ctx.font='400 8px Fira Code';ctx.fillText('Error on z (continuous) → smooth gradient → stable convergence',rx+46,panelY+104);
-ctx.fillStyle='#7d7a8c';ctx.fillText('vs Perceptron: error on ŷ (binary) → no gradient → jumpy updates',rx+46,panelY+116)}
+ctx.fillStyle='#ffd166';ctx.font='700 8px Fira Code';ctx.fillText('CLAVE:',rx+14,panelY+104);
+ctx.fillStyle='#e4e2df';ctx.font='400 8px Fira Code';ctx.fillText('Error en z (continuo) → gradiente suave → convergencia estable',rx+46,panelY+104);
+ctx.fillStyle='#7d7a8c';ctx.fillText('vs. perceptrón: error en ŷ (binario) → sin gradiente → actualizaciones a saltos',rx+46,panelY+116)}
 let animating=false;
 function drawLoop(){draw();if(animating)requestAnimationFrame(drawLoop)}
 const ctrl=addControls(el);
@@ -592,12 +592,12 @@ let lrLabel=document.createElement('label');lrLabel.textContent='η';ctrl.append
 let lrSlider=document.createElement('input');lrSlider.type='range';lrSlider.min='1';lrSlider.max='50';lrSlider.value='15';
 lrSlider.oninput=e=>{lr=+e.target.value/100;lrVal.textContent=lr.toFixed(2)};ctrl.appendChild(lrSlider);
 let lrVal=document.createElement('span');lrVal.className='btn';lrVal.style.cssText='min-width:40px;text-align:center';lrVal.textContent='0.15';ctrl.appendChild(lrVal);
-const tb=document.createElement('button');tb.className='btn';tb.textContent='▶ Train ×10';tb.onclick=()=>{for(let i=0;i<10;i++)trainEpoch();heatCache=null;draw()};
-let tmr=null;const ab=document.createElement('button');ab.className='btn';ab.textContent='⏩ Auto Train';
+const tb=document.createElement('button');tb.className='btn';tb.textContent='▶ Entrenar ×10';tb.onclick=()=>{for(let i=0;i<10;i++)trainEpoch();heatCache=null;draw()};
+let tmr=null;const ab=document.createElement('button');ab.className='btn';ab.textContent='⏩ Autoentrenar';
 ab.onclick=()=>{if(tmr){clearInterval(tmr);tmr=null;ab.classList.remove('active');animating=false}else{animating=true;tmr=setInterval(()=>{for(let i=0;i<3;i++)trainEpoch();heatCache=null;draw();
 let errs2=pts.filter(p=>predict(p.x,p.y)!==(p.c>=0?1:-1)).length;
 if(errs2===0&&losses.length>20&&losses[losses.length-1]<0.05){clearInterval(tmr);tmr=null;ab.classList.remove('active');animating=false}},50);ab.classList.add('active')}};
-const rst=document.createElement('button');rst.className='btn';rst.textContent='↻ Reset';
+const rst=document.createElement('button');rst.className='btn';rst.textContent='↻ Reiniciar';
 rst.onclick=()=>{seed();heatCache=null;if(tmr){clearInterval(tmr);tmr=null;ab.classList.remove('active')}animating=false;draw()};
 ctrl.appendChild(tb);ctrl.appendChild(ab);ctrl.appendChild(rst);draw()})();
 </script></body></html>
