@@ -232,4 +232,10 @@ This project uses a dual-license structure:
 
 ---
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=EncyclopediaWorld/howaiworks&type=Date)](https://star-history.com/#EncyclopediaWorld/howaiworks&Date)
+
+---
+
 *Built as an educational resource to make the history and mechanics of AI accessible to everyone.*
