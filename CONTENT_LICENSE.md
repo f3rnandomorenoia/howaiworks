@@ -1,31 +1,31 @@
-# Content & Code Licensing
+# Licencia de contenido y de código
 
-This repository contains both software **code** and educational **content**.
+Este repositorio contiene tanto **código** (software) como **contenido** educativo.
 
-## 1) Software (code)
+## 1) Software (código)
 
-Unless otherwise noted, all software code (including JavaScript, CSS, build scripts, and any code embedded in HTML such as `<script>` blocks) is licensed under:
+Salvo que se indique lo contrario, todo el código software (incluyendo JavaScript, CSS, scripts de build y cualquier código embebido en HTML como los bloques `<script>`) se licencia bajo:
 
-- **Apache License 2.0** — see `LICENSE`.
+- **Apache License 2.0** — ver `LICENSE`.
 
-This license allows broad reuse (including commercial use) with attribution/NOTICE requirements.
+Esta licencia permite una reutilización amplia (incluido uso comercial) con requisitos de atribución/NOTICE.
 
-## 2) Educational content (text, narrative, explanations)
+## 2) Contenido educativo (texto, narrativa, explicaciones)
 
-All **non-code content** (including explanatory text, narrative descriptions, demo descriptions, captions, and educational materials) is licensed under:
+Todo el **contenido no-código** (incluyendo texto explicativo, descripciones narrativas, descripciones de demos, pies de figura y materiales educativos) se licencia bajo:
 
-- **Creative Commons Attribution–NonCommercial 4.0 International (CC BY‑NC 4.0)**
+- **Creative Commons Atribución–NoComercial 4.0 Internacional (CC BY‑NC 4.0)**
 
-**You must provide attribution** when reusing/adapting the content, and **you may not use the content for commercial purposes** under this license.
+**Debes atribuir** al reutilizar/adaptar el contenido, y **no puedes usar el contenido con fines comerciales** bajo esta licencia.
 
-If you need commercial usage rights for the content, please see `COMMERCIAL.md`.
+Si necesitas derechos de uso comercial del contenido, consulta `COMMERCIAL.md`.
 
-## 3) What counts as "code" vs "content" inside HTML?
+## 3) ¿Qué cuenta como "código" vs "contenido" dentro de HTML?
 
-- **Code**: `<script>`, inline JavaScript, CSS rules, program logic, rendering/simulation code.
-- **Content**: explanatory paragraphs, headings, captions, narrative text, and educational descriptions.
+- **Código**: `<script>`, JavaScript en línea, reglas CSS, lógica del programa, código de renderizado/simulación.
+- **Contenido**: párrafos explicativos, encabezados, pies de figura, texto narrativo y descripciones educativas.
 
-## 4) Brand / trademark notice (important)
+## 4) Aviso de marca / trademark (importante)
 
-The project name, logo, and associated branding are **not** granted under the code/content licenses unless explicitly stated.
-See `BRAND_GUIDELINES.md`.
+El nombre del proyecto, el logo y el *branding* asociado **no** se conceden bajo las licencias de código/contenido salvo que se indique explícitamente.
+Ver `BRAND_GUIDELINES.md`.
